@@ -1,16 +1,17 @@
 <template lang="pug">
-.hero
-.content
-  .logo
-    img(src="@/assets/images/logo.png")
-    .text エルビナ
-  .concept
-    p トレーナーは全員女性。
-    p 安心してトレーニングがしたい。
-    p そんな夢を叶えるパーソナルジムです。
+section
+  .hero
+  .content
+    .logo
+      img(src="@/assets/images/logo.png")
+      .text エルビナ
+    .concept
+      p トレーナーは全員女性。
+      p 安心してトレーニングがしたい。
+      p そんな夢を叶えるパーソナルジムです。
 </template>
 
-<style lang="sass">
+<style lang="sass" scoped>
 .hero
   width: 100%
   height: 340px
