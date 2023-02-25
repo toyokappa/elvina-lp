@@ -13,4 +13,15 @@ export default defineNuxtConfig({
       }
     },
   },
+    app: {
+    head: {
+      title: '女性専用パーソナルElvina',
+      htmlAttrs: {
+        lang: 'ja'
+      },
+      link: [
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:400,700' },
+      ],
+    }
+  },
 })

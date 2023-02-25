@@ -1,8 +1,7 @@
 <template lang="pug">
 div
-  Header
+  GlobalsHeader
+  slot
 </template>
 
-<script setup>
-import Header from "~~/components/globals/Header.vue";
-</script>
+<script setup></script>
