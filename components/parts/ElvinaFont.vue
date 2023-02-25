@@ -15,6 +15,7 @@ const styles = computed(() => ({
 <style lang="sass">
 .font
   display: inline-block
+  text-align: left
   position: relative
   color: transparent
   margin-right: 0.2rem

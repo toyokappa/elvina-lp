@@ -1,5 +1,5 @@
 <template lang="pug">
-section.section-padding.bg-base
+section.section.bg-base
   .title.mb-3 トレーナーもお客様も全員女性
   .eyecatch.mb-2
   .content.px-2.mb-2

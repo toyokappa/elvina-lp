@@ -6,7 +6,7 @@ NuxtLayout
 <style lang="sass">
 body
   font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif
-.section-padding
+.section
   padding: 30px 0
 .bg-base
   background-color: $base
