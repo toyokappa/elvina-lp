@@ -4,12 +4,19 @@ ul.breadcrumb.px-2
     nuxt-link(to="/") エルビナ
   li
     img(src="@/assets/images/vector-right.svg")
-  li コースと料金
+  li {{ pageTitle }}
 .px-2.mb-3
-  PartsElvinaFont.underbar.f-64.mb-1 Program
-  .f-24 コースと料金
+  PartsElvinaFont.underbar.f-64.mb-1 {{ pageTitleSub }}
+  .f-24 {{ pageTitle }}
 .eyecatch.top
 </template>
+
+<script setup>
+const props = defineProps({
+  pageTitle: String,
+  pageTitleSub: String,
+});
+</script>
 
 <style lang="sass">
 .breadcrumb

@@ -1,15 +1,19 @@
 <template lang="pug">
-nuxt-link.button(:style="buttonStyles")
+a.button(v-if="outside" :style="buttonStyles" target="_blank" rel="noopener")
+  slot
+nuxt-link.button(v-else :style="buttonStyles")
   slot
 </template>
 
 <script setup lang="ts">
 interface Props {
   color?: string;
+  outside?: boolean;
 }
 
 const props = withDefaults(defineProps<Props>(), {
   color: "black",
+  inside: false,
 });
 
 const buttonStyles = computed(() => {

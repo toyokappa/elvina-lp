@@ -1,5 +1,8 @@
 <template lang="pug">
-SectionsFirstViewSubPage
+SectionsFirstViewSubPage(
+  pageTitle="コースと料金"
+  pageTitleSub="Course"
+)
 SectionsCourseDetail
 SectionsService
 SectionsCourseProcess
