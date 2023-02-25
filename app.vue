@@ -8,8 +8,26 @@ body
   font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif
 .section
   padding: 30px 0
+.title
+  text-align: center
+.eyecatch
+  width: 100%
+  height: 260px
+  background-color: $grey
 .bg-base
   background-color: $base
+.f-12
+  font-size: 12px
+.f-20
+  font-size: 20px
+.f-24
+  font-size: 24px
+.f-32
+  font-size: 32px
+.f-36
+  font-size: 36px
+.f-64
+  font-size: 64px
 .px-2
   padding: 0 20px
 .mb-1

@@ -5,7 +5,7 @@ button(:style="buttonStyles")
 
 <script setup lang="ts">
 interface Props {
-  color: string;
+  color?: string;
 }
 
 const props = withDefaults(defineProps<Props>(), {

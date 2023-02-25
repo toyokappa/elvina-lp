@@ -1,6 +1,6 @@
 <template lang="pug">
 section.section.bg-base
-  .title.mb-3 トレーナーもお客様も全員女性
+  .title.f-20.mb-3 トレーナーもお客様も全員女性
   .eyecatch.mb-2
   .content.px-2.mb-2
     p.mb-2 Elvina（エルビナ）は女性専用のパーソナルジムです。お客様も女性、トレーナーも女性。
@@ -10,12 +10,4 @@ section.section.bg-base
     PartsButton 無料体験トレーニングを予約する
 </template>
 
-<style lang="sass" scoped>
-.title
-  font-size: 20px
-  text-align: center
-.eyecatch
-  width: 100%
-  height: 260px
-  background-color: $grey
-</style>
+<style lang="sass" scoped></style>

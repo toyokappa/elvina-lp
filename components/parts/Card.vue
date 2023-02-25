@@ -11,7 +11,7 @@
 
 <script setup>
 const props = defineProps({
-  headerMain: String,
+  headerMain: [String, Number],
   headerSub: String,
 });
 </script>

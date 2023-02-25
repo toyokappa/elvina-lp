@@ -7,7 +7,7 @@ section.section
     p
       span.f-64
         PartsElvinaFont 4
-      span つの特長
+      span.f-32 つの特長
   .content.px-2.mb-2
     PartsCard(
       v-for="(feature, fi) in featureList"
@@ -70,15 +70,6 @@ const featureList = [
 
 <style lang="sass" scoped>
 .section
-  .title
-    text-align: center
-    font-size: 32px
-    .f-24
-      font-size: 24px
-    .f-36
-      font-size: 36px
-    .f-64
-      font-size: 64px
   .content
     .card-title
       font-size: 20px

@@ -2,4 +2,5 @@
 SectionsFirstView
 SectionsConcept
 SectionsFeature
+SectionsRecommend
 </template>
