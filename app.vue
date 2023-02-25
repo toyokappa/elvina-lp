@@ -12,7 +12,7 @@ body
   text-align: center
 .eyecatch
   width: 100%
-  height: 260px
+  aspect-ratio: 16/9
   background-color: $grey
 .bg-base
   background-color: $base
