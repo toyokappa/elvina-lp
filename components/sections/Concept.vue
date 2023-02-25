@@ -10,7 +10,7 @@ section.section-padding.bg-base
     PartsButton 無料体験トレーニングを予約する
 </template>
 
-<style lang="sass">
+<style lang="sass" scoped>
 .title
   font-size: 20px
   text-align: center
