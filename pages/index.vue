@@ -3,4 +3,5 @@ SectionsFirstView
 SectionsConcept
 SectionsFeature
 SectionsRecommend
+SectionsCourse
 </template>
