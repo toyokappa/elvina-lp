@@ -1,4 +1,5 @@
 <template lang="pug">
+SectionsFirstViewSubPage
 SectionsCourseDetail
 SectionsService
 SectionsCourseProcess
