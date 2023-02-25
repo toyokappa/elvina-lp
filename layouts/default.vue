@@ -1,7 +1,7 @@
 <template lang="pug">
-div
-  GlobalsHeader
-  slot
+GlobalsHeader
+slot
+GlobalsFooter
 </template>
 
 <script setup></script>

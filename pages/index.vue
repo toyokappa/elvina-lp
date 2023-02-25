@@ -4,4 +4,5 @@ SectionsConcept
 SectionsFeature
 SectionsRecommend
 SectionsCourse
+SectionsGymInfo
 </template>
