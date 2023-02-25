@@ -7,7 +7,7 @@ section.section.bg-base
     p.mb-2 女性ならではのお悩みに答えながら、トレーニングやダイエットが行える、安心の空間・サービスを提供しております。
     p.mb-2 パーソナルジムに通ってみたいけど不安に感じていた方は、ぜひ一度無料体験トレーニングにお越しいただき、Elvinaの雰囲気をご体感ください。
   .px-2
-    PartsButton 無料体験トレーニングを予約する
+    PartsButton(to="/trial") 無料体験トレーニングを予約する
 </template>
 
 <style lang="sass" scoped></style>

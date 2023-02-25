@@ -1,5 +1,5 @@
 <template lang="pug">
-button(:style="buttonStyles")
+nuxt-link.button(:style="buttonStyles")
   slot
 </template>
 
@@ -33,8 +33,11 @@ const buttonStyles = computed(() => {
 </script>
 
 <style lang="sass" scoped>
-button
+.button
+  display: block
   font-weight: bold
+  text-align: center
+  text-decoration: none
   width: 100%
   padding: 20px 40px
   border-radius: 5px

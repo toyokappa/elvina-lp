@@ -25,7 +25,7 @@ section.section
           :class="{ 'mb-2': feature.contents.length > (ci + 1) }"
         ) {{ content }}
   .px-2
-    PartsButton 無料体験トレーニングを予約する
+    PartsButton(to="/trial") 無料体験トレーニングを予約する
 </template>
 
 <script setup>
