@@ -18,6 +18,7 @@ const props = defineProps({
 
 <style lang="sass" scoped>
 .card
+  background-color: $white
   padding: 30px 20px
   border: 1px solid $black
   border-radius: 5px
