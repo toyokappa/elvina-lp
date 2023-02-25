@@ -18,5 +18,4 @@ section.section-padding.bg-base
   width: 100%
   height: 260px
   background-color: $grey
-.content
 </style>
