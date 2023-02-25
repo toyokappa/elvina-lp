@@ -18,14 +18,16 @@ const styles = computed(() => ({
   text-align: left
   position: relative
   color: transparent
-  margin-right: 0.2rem
+  margin-right: 2.5px
+  letter-spacing: 1px
+  font-weight: bold
   .front-text::before
     content: var(--content)
     color: $white
     -webkit-text-stroke: 1px $black
     position: absolute
     top: 0
-    left: 0.2rem
+    left: 2.5px
     z-index: 2
   .back-text::before
     content: var(--content)
