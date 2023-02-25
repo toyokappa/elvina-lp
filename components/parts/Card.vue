@@ -2,7 +2,7 @@
 .card
   .header.mb-1
     .header-sub {{ headerSub }}
-    .header-main.mb-1
+    .header-main.mb-1(v-if="headerMain")
       PartsElvinaFont {{ headerMain }}
     .separate
   .body
