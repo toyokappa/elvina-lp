@@ -1,6 +1,6 @@
 <template lang="pug">
 section.section
-  .title.f-24.mb-3 無料体験の流れ
+  h2.t-center.f-24.mb-3 無料体験の流れ
   .px-2.mb-2
     PartsStep.mb-2(:step="1" title="まずは無料体験を予約")
       p

@@ -2,7 +2,7 @@
 section
   .hero
   .content
-    .logo
+    h1.logo
       img(src="@/assets/images/logo.png")
       .text エルビナ
     .concept

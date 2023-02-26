@@ -1,6 +1,6 @@
 <template lang="pug">
 section.section.bg-base
-  .title.mb-3
+  h2.t-center.mb-3
     p
       span.f-36 Elvina
       span.f-24 (エルビナ)は

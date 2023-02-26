@@ -1,6 +1,6 @@
 <template lang="pug">
 section.section
-  .title.f-24.mb-3 初めての方へ
+  h2.t-center.f-24.mb-3 初めての方へ
   .description.px-2.mb-3 Elvina（エルビナ）は、女性のダイエットのダイエットのお悩みを解決する3つのコースをご用意しております。ご予算や目的に応じてお選びいただけます。
   .content.px-2.mb-2
     PartsCard(

@@ -1,6 +1,6 @@
 <template lang="pug">
 section.section.bg-base
-  .title.f-24.mb-3 サービス内容
+  h2.t-center.f-24.mb-3 サービス内容
   .px-2.mb-2
     PartsCardImage(
       v-for="(service, index) in serviceList"

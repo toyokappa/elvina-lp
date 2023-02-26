@@ -1,6 +1,6 @@
 <template lang="pug">
 section.section
-  .title.mb-3
+  h2.t-center.mb-3
     p.f-24 お支払い方法
   .content.px-2.mb-2
     PartsCard(headerSub="クレジットカード(一括のみ)")

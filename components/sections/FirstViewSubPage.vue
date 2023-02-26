@@ -5,7 +5,7 @@ ul.breadcrumb.px-2
   li
     img(src="@/assets/images/vector-right.svg")
   li {{ pageTitle }}
-.px-2.mb-3
+h1.px-2.mb-3
   PartsElvinaFont.underbar.f-64.mb-1 {{ pageTitleSub }}
   .f-24 {{ pageTitle }}
 .eyecatch.top

@@ -1,6 +1,6 @@
 <template lang="pug">
 section.section.bg-base
-  .title.f-24.mb-3 店舗情報
+  h2.t-center.f-24.mb-3 店舗情報
   .content.px-2.mb-2
     .mb-2
       strong 営業時間

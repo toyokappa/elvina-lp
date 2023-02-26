@@ -1,6 +1,6 @@
 <template lang="pug">
 section.section
-  .title.f-24.mb-3 入会後の流れ
+  h2.t-center.f-24.mb-3 入会後の流れ
   .px-2.mb-3 ご入会にあたりご安心頂けますよう、ご入会いただいた後の流れをご説明いたします。
   .px-2.mb-2
     PartsStep.mb-2(:step="1" title="初回トレーニングを迎えるまで")
