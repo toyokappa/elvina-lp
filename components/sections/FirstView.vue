@@ -3,7 +3,7 @@ section
   .hero
   .content
     h1.logo
-      img(src="@/assets/images/logo.png" alt="Elvina")
+      img(src="@/assets/images/logo.png" alt="Elvina" width="157" height="48")
       .text エルビナ
     .concept
       p トレーナーは全員女性。
