@@ -8,23 +8,22 @@ section.section
       span.f-64
         PartsElvinaFont 4
       span.f-32 つの特長
-  .content.px-2.mb-2
-    PartsCard(
-      v-for="(feature, fi) in featureList"
-      :key="fi"
-      :headerMain="fi + 1"
-      headerSub="特長"
-      :class="{ 'mb-2': featureList.length > (fi + 1) }"
-    )
-      .card-title.mb-1
-        p(v-for="title in feature.titles" :key="title") {{ title }}
-      .card-content
-        p(
-          v-for="(content, ci) in feature.contents"
-          :key="ci"
-          :class="{ 'mb-2': feature.contents.length > (ci + 1) }"
-        ) {{ content }}
-  .px-2
+  .container
+    .cell-4-pc
+      PartsCard.mb-2(
+        v-for="(feature, fi) in featureList"
+        :key="fi"
+        :headerMain="fi + 1"
+        headerSub="特長"
+      )
+        .card-title.f-20.t-center.mb-1
+          p(v-for="title in feature.titles" :key="title") {{ title }}
+        .card-content
+          p(
+            v-for="(content, ci) in feature.contents"
+            :key="ci"
+            :class="{ 'mb-2': feature.contents.length > (ci + 1) }"
+          ) {{ content }}
     PartsButton(to="/trial") 無料体験トレーニングを予約する
 </template>
 
@@ -68,10 +67,4 @@ const featureList = [
 ];
 </script>
 
-<style lang="sass" scoped>
-.section
-  .content
-    .card-title
-      font-size: 20px
-      text-align: center
-</style>
+<style lang="sass" scoped></style>

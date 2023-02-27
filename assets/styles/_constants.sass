@@ -11,3 +11,9 @@ $sun-red: #FF7B7B
 $dark: #272727
 
 $block-padding: 13px 20px
+
+$pc: 992px
+
+@mixin pc
+  @media screen and (min-width: $pc)
+    @content

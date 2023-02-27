@@ -8,6 +8,23 @@ body
   font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif
 .section
   padding: 30px 0
+.container
+  padding: 0 20px
+  @include pc
+    width: 100%
+    max-width: 992px
+    margin: 0 auto
+.cell-4-pc
+  @include pc
+    margin: 0 auto
+    display: flex
+    align-items: stretch
+    flex-wrap: wrap
+    & > *
+      width: calc(50% - 10px)
+      margin-right: 20px
+      &:nth-child(even)
+        margin-right: 0
 .t-center
   text-align: center
 .eyecatch

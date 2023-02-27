@@ -6,16 +6,15 @@ section.section.bg-base
       span.f-24 (エルビナ)は
     p.f-24 こんな方におすすめ
   .eyecatch.mb-3
-  .content.px-2.mb-2
-    PartsCardPoint(
-      v-for="(recommend, ri) in recommendList"
-      :key="ri"
-      :point="ri + 1"
-      :titles="recommend.titles"
-      :content="recommend.content"
-      :class="{ 'mb-2': recommendList.length > (ri + 1) }"
-    )
-  .px-2
+  .container
+    .cell-4-pc
+      PartsCardPoint.mb-2(
+        v-for="(recommend, ri) in recommendList"
+        :key="ri"
+        :point="ri + 1"
+        :titles="recommend.titles"
+        :content="recommend.content"
+      )
     PartsButton(to="/trial") 無料体験トレーニングを予約する
 </template>
 
@@ -43,3 +42,5 @@ const recommendList = [
   },
 ];
 </script>
+
+<style lang="sass" scoped></style>
