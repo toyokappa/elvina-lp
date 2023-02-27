@@ -1,7 +1,7 @@
 <template lang="pug">
 section.section
   h2.t-center.f-24.mb-3 無料体験の流れ
-  .px-2.mb-2
+  .container
     PartsStep.mb-2(:step="1" title="まずは無料体験を予約")
       p
         strong 理想の身体を手に入れる第一歩
@@ -41,10 +41,9 @@ section.section
       p
         strong ご入会希望の場合
         span は、このタイミングでお申し付けいただければご入会の案内も致します。
-    PartsStep(:step="8" title="体験終了" noLine)
+    PartsStep.mb-2(:step="8" title="体験終了" noLine)
       p
         span これにて体験は終了です。トレーニングお疲れさまでした。急な運動にて疲れている場合もございますので、お気をつけてお帰りください。
-  .px-2
     PartsButton(color="white" href="https://sympl.jp/reserve" outside) 予約ページに進む
 </template>
 

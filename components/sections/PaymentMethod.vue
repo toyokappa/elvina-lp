@@ -2,8 +2,8 @@
 section.section
   h2.t-center.mb-3
     p.f-24 お支払い方法
-  .content.px-2.mb-2
-    PartsCard(headerSub="クレジットカード(一括のみ)")
+  .container
+    PartsCard.mb-2(headerSub="クレジットカード(一括のみ)")
       .row.mb-1
         .col
           img(src="@/assets/images/card-visa.png")
@@ -18,7 +18,6 @@ section.section
           img(src="@/assets/images/card-diners_club.png")
         .col
           img(src="@/assets/images/card-discover.png")
-  .px-2
     PartsButton(to="/trial") 無料体験トレーニングを予約する
 </template>
 

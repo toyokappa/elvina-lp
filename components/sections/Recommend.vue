@@ -7,7 +7,7 @@ section.section.bg-base
     p.f-24 こんな方におすすめ
   .eyecatch.mb-3
   .container
-    .cell-2-pc
+    .cell-pc.cell-2
       PartsCardPoint.mb-2(
         v-for="(recommend, ri) in recommendList"
         :key="ri"

@@ -1,7 +1,8 @@
 <template lang="pug">
 header
-  nuxt-link.logo(to="/")
-    img(src="@/assets/images/logo.png")
+  .container
+    nuxt-link.logo(to="/")
+      img(src="@/assets/images/logo.png")
 </template>
 
 <style lang="sass" scoped>
@@ -10,7 +11,7 @@ header
   background-color: $white
   border-bottom: 1px solid $grey
   border-top: 5px solid $pink
-  padding: $block-padding
+  padding: 13px 0
   display: flex
   align-items: center
   justify-content: flex-start

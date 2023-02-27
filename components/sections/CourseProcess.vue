@@ -1,8 +1,8 @@
 <template lang="pug">
 section.section
   h2.t-center.f-24.mb-3 入会後の流れ
-  .px-2.mb-3 ご入会にあたりご安心頂けますよう、ご入会いただいた後の流れをご説明いたします。
-  .px-2.mb-2
+  .container
+    .mb-3 ご入会にあたりご安心頂けますよう、ご入会いただいた後の流れをご説明いたします。
     PartsStep.mb-2(:step="1" title="初回トレーニングを迎えるまで")
       p
         strong 事前の準備は不要
@@ -41,7 +41,7 @@ section.section
         span 週2回のトレーニングと毎日の食事管理の成果が現れます。女性らしい美しい体づくりを専門で行うエルビナだからこそのサポートも相まって、
         strong より理想に近い体づくりを実感
         span いただけたらと思います。
-    PartsStep(:step="5" title="継続利用プラン" noLine)
+    PartsStep.mb-2(:step="5" title="継続利用プラン" noLine)
       p.mb-1
         span ここで一度コースは終了となりますが、その後も新たな目標を定めて通い続けていただけるよう、
         strong コース修了者限定のプラン
@@ -56,7 +56,6 @@ section.section
         span となります。
       p
         span 女性の人生の中でダイエットを考える機会は多くあるかと思います。常に理想的な自分でい続け、自信を持って毎日を過ごせるようエルビナはお客様に近い視点で常にサポートさせていただきます。
-  .px-2
     PartsButton(to="/trial") 無料体験トレーニングを予約する
 </template>
 

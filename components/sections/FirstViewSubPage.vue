@@ -1,13 +1,14 @@
 <template lang="pug">
-ul.breadcrumb.px-2
-  li
-    nuxt-link(to="/") エルビナ
-  li
-    img(src="@/assets/images/vector-right.svg")
-  li {{ pageTitle }}
-h1.px-2.mb-3
-  PartsElvinaFont.underbar.f-64.mb-1 {{ pageTitleSub }}
-  .f-24 {{ pageTitle }}
+.container
+  ul.breadcrumb
+    li
+      nuxt-link(to="/") エルビナ
+    li
+      img(src="@/assets/images/vector-right.svg")
+    li {{ pageTitle }}
+  h1.mb-3
+    PartsElvinaFont.underbar.f-64.mb-1 {{ pageTitleSub }}
+    .f-24 {{ pageTitle }}
 .eyecatch.top
 </template>
 
