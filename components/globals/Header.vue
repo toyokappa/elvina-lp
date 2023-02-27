@@ -2,7 +2,7 @@
 header
   .container
     nuxt-link.logo(to="/")
-      img(src="@/assets/images/logo.png")
+      img(src="@/assets/images/logo.png" alt="Elvina")
 </template>
 
 <style lang="sass" scoped>
