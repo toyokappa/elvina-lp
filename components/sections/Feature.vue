@@ -9,7 +9,7 @@ section.section
         PartsElvinaFont 4
       span.f-32 つの特長
   .container
-    .cell-4-pc
+    .cell-2-pc
       PartsCard.mb-2(
         v-for="(feature, fi) in featureList"
         :key="fi"

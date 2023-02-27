@@ -13,8 +13,9 @@ body
   @include pc
     width: 100%
     max-width: 992px
+    padding: 0
     margin: 0 auto
-.cell-4-pc
+.cell-2-pc
   @include pc
     margin: 0 auto
     display: flex
