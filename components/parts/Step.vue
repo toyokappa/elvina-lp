@@ -61,4 +61,11 @@ const props = defineProps({
       width: 100%
       margin-left: auto
       font-size: 14px
+      @include pc
+        display: flex
+        align-items: flex-start
+        .eyecatch, .description
+          width: 100%
+        .eyecatch
+          margin-right: 20px
 </style>
