@@ -16,6 +16,9 @@ section
   width: 100%
   height: 340px
   background-color: $grey
+  @include pc
+    aspect-ratio: 16/9
+    height: auto
 .content
   text-align: center
   padding: 50px 0
