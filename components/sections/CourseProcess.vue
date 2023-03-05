@@ -3,7 +3,7 @@ section.section
   h2.t-center.f-24.mb-3 入会後の流れ
   .container
     .mb-3 ご入会にあたりご安心頂けますよう、ご入会いただいた後の流れをご説明いたします。
-    PartsStep.mb-2(:step="1" title="初回トレーニングを迎えるまで")
+    PartsStep.mb-2(:step="1" title="初回トレーニングを迎えるまで" :image="image01")
       p
         strong 事前の準備は不要
         span です。初回トレーニングの日からダイエットもスタートします。理想の体型を思い浮かべながら当日まで楽しみにしてお待ち下さい。
@@ -59,6 +59,8 @@ section.section
     PartsButton(to="/trial") 無料体験トレーニングを予約する
 </template>
 
-<script setup></script>
+<script setup>
+import image01 from "@/assets/images/course-process01.jpg";
+</script>
 
 <style lang="sass" scoped></style>

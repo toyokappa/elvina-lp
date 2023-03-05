@@ -10,7 +10,7 @@
     .step-side
       .line(v-if="!noLine")
     .step-main
-      .eyecatch.mb-1
+      img.eyecatch.mb-1(:src="image" :alt="title")
       .description
         slot
 </template>
@@ -19,6 +19,7 @@
 const props = defineProps({
   step: Number,
   title: String,
+  image: String,
   noLine: Boolean,
 });
 </script>

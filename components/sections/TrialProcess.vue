@@ -2,7 +2,7 @@
 section.section
   h2.t-center.f-24.mb-3 無料体験の流れ
   .container
-    PartsStep.mb-2(:step="1" title="まずは無料体験を予約")
+    PartsStep.mb-2(:step="1" title="まずは無料体験を予約" :image="image01")
       p
         strong 理想の身体を手に入れる第一歩
         span です。まずはこちらのページの下にある「予約ページに進む」ボタンから無料体験の来店予約をお願いします。
@@ -13,7 +13,7 @@ section.section
         span 当日は持ち物として運動ができる服装、室内履き、タオル、お飲み物をご持参くださいませ。
       p
         span なお、当ジムには駐車場がございますので、車のお客様もご安心してお越しいただけます。
-    PartsStep.mb-2(:step="3" title="お着替え")
+    PartsStep.mb-2(:step="3" title="お着替え" :image="image03")
       p
         span ジム内の更衣室にて、お手持ちのウェアに着替えて準備をしていただきます。
     PartsStep.mb-2(:step="4" title="測定")
@@ -47,6 +47,9 @@ section.section
     PartsButton(color="white" href="https://sympl.jp/reserve" outside) 予約ページに進む
 </template>
 
-<script setup></script>
+<script setup>
+import image01 from "@/assets/images/trial-process01.jpg";
+import image03 from "@/assets/images/trial-process03.jpg";
+</script>
 
 <style lang="sass" scoped></style>

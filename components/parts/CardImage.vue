@@ -1,6 +1,6 @@
 <template lang="pug">
 .card
-  .eyecatch
+  img.eyecatch(:src="image" :alt="name")
   .text
     .f-20 {{ name }}
 </template>
@@ -8,6 +8,7 @@
 <script setup>
 const props = defineProps({
   name: String,
+  image: String,
 });
 </script>
 
