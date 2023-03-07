@@ -10,7 +10,8 @@
     .step-side
       .line(v-if="!noLine")
     .step-main
-      img.eyecatch.mb-1(:src="image" :alt="title")
+      .image
+        img.eyecatch.mb-1(:src="image" :alt="title")
       .description
         slot
 </template>
@@ -65,8 +66,11 @@ const props = defineProps({
       @include pc
         display: flex
         align-items: flex-start
-        .eyecatch, .description
+        justify-content: space-around
+        flex-wrap: nowrap
+        .image, .description
           width: 100%
-        .eyecatch
+          flex: 1
+        .image
           margin-right: 20px
 </style>
