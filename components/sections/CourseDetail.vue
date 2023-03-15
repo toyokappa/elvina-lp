@@ -54,7 +54,7 @@ const courseList = [
     headerSub: "スタンダードコース",
     texts: ["しっかりと時間を掛けて", "プロポーションを改善したい方へ"],
     term: 3,
-    numberOfTraining: 24,
+    count: 24,
     admissionFee: 22000,
     courseFee: 276000,
   },
