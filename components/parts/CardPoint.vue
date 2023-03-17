@@ -29,7 +29,7 @@ const props = defineProps({
   .point
     font-weight: bold
     text-align: center
-    color: $pink
+    color: $sun-red
     margin-right: 10px
   .separate
     height: 50px

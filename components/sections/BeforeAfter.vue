@@ -3,8 +3,8 @@ section.section
   h2.t-center.f-24.mb-3 Before/After
   .container
     .t-center.mb-2 Elvinaを実際に体験いただいた方々
-    .cell-pc.cell-2(v-for="monitor in monitorList" :key="monitor.id")
-      .content.mb-2
+    .cell-pc.cell-2.mb-2(v-for="monitor in monitorList" :key="monitor.id")
+      .content.mb-1
         .before-after
           .before
             img(:src="monitor.photo.before")
@@ -13,7 +13,7 @@ section.section
             img(:src="monitor.photo.after")
             .text-label after
         img.arrow-right(src="@/assets/images/vector-before-after.svg")
-      .content.mb-2
+      .content
         .detail
           .t-center
             .profile.mb-1 {{ monitor.profile }}
@@ -163,7 +163,7 @@ const monitorList = [
       .defference
         color: $white
         background-color: $sun-red
-        padding: 10px
+        padding: 5px 10px
         border-radius: 5px
         margin-left: auto
 </style>

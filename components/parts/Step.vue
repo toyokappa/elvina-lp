@@ -34,13 +34,13 @@ const props = defineProps({
       font-weight: bold
       width: 60px
       height: 60px
-      border: 2px solid $pink
+      border: 2px solid $sun-red
       border-radius: 50%
       margin-right: 10px
       position: relative
       .item
         text-align: center
-        color: $pink
+        color: $sun-red
         position: absolute
         top: 50%
         left: 50%
@@ -55,7 +55,7 @@ const props = defineProps({
       .line
         height: calc(100% + 20px)
 
-        background-image: url("@/assets/images/line_dot.png")
+        background-image: url("@/assets/images/line-dot.png")
         background-size: 7px 28px
         background-position: center
         background-repeat: repeat-y
