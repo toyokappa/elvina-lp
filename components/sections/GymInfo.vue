@@ -1,5 +1,5 @@
 <template lang="pug">
-section.section.bg-base
+section.section
   h2.t-center.f-24.mb-3 店舗情報
   .container.mb-2
     .mb-2

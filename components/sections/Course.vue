@@ -1,5 +1,5 @@
 <template lang="pug">
-section.section
+section.section.bg-base
   h2.t-center.f-24.mb-3 コースと料金
   .eyecatch.mb-3
   .container

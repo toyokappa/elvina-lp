@@ -61,7 +61,7 @@ const courseList = [
 ];
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 .course
   text-align: center
   .value
