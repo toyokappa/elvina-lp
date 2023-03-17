@@ -5,10 +5,12 @@ section
     h1.logo
       img(src="@/assets/images/logo.png" alt="Elvina" width="157" height="48")
       .text エルビナ
-    .concept
+    .concept.mb-3
       p トレーナーは全員女性。
       p 安心してトレーニングがしたい。
       p そんな夢を叶えるパーソナルジムです。
+    .container
+      PartsCampaign
 </template>
 
 <style lang="sass" scoped>
