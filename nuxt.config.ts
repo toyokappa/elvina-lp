@@ -1,7 +1,7 @@
 const domain = "elvina.jp"
 const host = `https://${domain}`
 const projectName = "Elvina"
-const serviceName = "女性専用パーソナルElvina(エルビナ)"
+const serviceName = "女性専用パーソナルジムElvina(エルビナ)"
 const pageTitle = `${serviceName} | 前橋初！女性が安心して通えるパーソナルジム`
 const description = "前橋初！トレーナーは全員女性。安心してトレーニングがしたい。そんな夢を叶えるパーソナルジムです。"
 
