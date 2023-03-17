@@ -1,6 +1,6 @@
 <template lang="pug">
 nuxt-link.campaign(to="/trial")
-  img(src="@/assets/images/campaign.png")
+  img(src="@/assets/images/campaign.png" width="480" height="227" alt="キャンペーン実施中！")
   .t-center.f-14 まずは無料体験から！お気軽にご予約ください！
 </template>
 

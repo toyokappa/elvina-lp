@@ -4,7 +4,7 @@
     li
       nuxt-link(to="/") エルビナ
     li
-      img(src="@/assets/images/vector-right.svg")
+      img(src="@/assets/images/vector-right.svg" alt=">" width="16" height="17")
     li {{ pageTitle }}
   h1.mb-3
     PartsElvinaFont.underbar.f-64.mb-1 {{ pageTitleSub }}

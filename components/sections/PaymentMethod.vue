@@ -6,18 +6,18 @@ section.section
     PartsCard.mb-2(headerSub="クレジットカード(一括のみ)")
       .row.mb-1
         .col
-          img(src="@/assets/images/card-visa.png")
+          img(src="@/assets/images/card-visa.png" alt="VISA" width="120" height="39")
         .col
-          img(src="@/assets/images/card-mastercard.png")
+          img(src="@/assets/images/card-mastercard.png" alt="Mastercard" width="120" height="94")
         .col
-          img(src="@/assets/images/card-jcb.png")
+          img(src="@/assets/images/card-jcb.png" alt="JCB" width="120" height="93")
       .row
         .col
-          img(src="@/assets/images/card-american_express.png")
+          img(src="@/assets/images/card-american_express.png" alt="American Express" width="120" height="73")
         .col
-          img(src="@/assets/images/card-diners_club.png")
+          img(src="@/assets/images/card-diners_club.png" alt="diners club" width="120" height="76")
         .col
-          img(src="@/assets/images/card-discover.png")
+          img(src="@/assets/images/card-discover.png" alt="discover" width="120" height="72")
     PartsButton(to="/trial") 無料体験トレーニングを予約する
 </template>
 

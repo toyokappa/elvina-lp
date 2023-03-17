@@ -7,12 +7,12 @@ section.section
       .content.mb-1
         .before-after
           .before
-            img(:src="monitor.photo.before")
+            img(:src="monitor.photo.before" alt="Before" width="400" height="800")
             .text-label before
           .after
-            img(:src="monitor.photo.after")
+            img(:src="monitor.photo.after" alt="After" width="400" height="800")
             .text-label after
-        img.arrow-right(src="@/assets/images/vector-before-after.svg")
+        img.arrow-right(src="@/assets/images/vector-before-after.svg" alt=">>" width="50" height="50")
       .content
         .detail
           .t-center
@@ -25,7 +25,7 @@ section.section
               .before
                 span.f-20 {{ result.before }}
                 span {{ result.unit }}
-              img(src="@/assets/images/vector-before-after.svg")
+              img(src="@/assets/images/vector-before-after.svg" alt=">>" width="50" height="50")
               .after
                 span.f-24 {{ result.after }}
                 span {{ result.unit }}

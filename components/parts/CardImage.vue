@@ -1,6 +1,6 @@
 <template lang="pug">
 .card
-  img.eyecatch(:src="image" :alt="name")
+  img.eyecatch(:src="image" :alt="name" width="550" height="367")
   .text
     .f-20 {{ name }}
 </template>

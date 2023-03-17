@@ -11,7 +11,7 @@
       .line(v-if="!noLine")
     .step-main
       .image
-        img.eyecatch.mb-1(:src="image" :alt="title")
+        img.eyecatch.mb-1(:src="image" :alt="title" width="1080" height="720")
       .description
         slot
 </template>
