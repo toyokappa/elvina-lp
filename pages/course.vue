@@ -8,7 +8,7 @@ SectionsService
 SectionsCourseProcess
 SectionsPlanDetail
 SectionsPaymentMethod
-SectionsGymInfo
+SectionsGymInfo(bgBase)
 </template>
 
 <script setup>

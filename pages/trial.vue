@@ -4,7 +4,7 @@ SectionsFirstViewSubPage(
   pageTitleSub="FreeTrial"
 )
 SectionsTrialProcess
-SectionsGymInfo
+SectionsGymInfo(bgBase)
 </template>
 
 <script setup>
