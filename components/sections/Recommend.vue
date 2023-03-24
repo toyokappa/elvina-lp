@@ -5,7 +5,7 @@ section.section.bg-base
       span.f-36 Elvina
       span.f-24 (エルビナ)は
     p.f-24 こんな方におすすめ
-  .eyecatch.mb-3
+  img.eyecatch.mb-3(src="@/assets/images/thumbnail02.jpg")
   .container
     .cell-pc.cell-2
       PartsCardPoint.mb-2(

@@ -1,7 +1,7 @@
 <template lang="pug">
 section.section.bg-base
   h2.t-center.f-20.mb-3 トレーナーもお客様も全員女性
-  .eyecatch.mb-2
+  img.eyecatch.mb-2(src="@/assets/images/thumbnail01.jpg")
   .container
     .mb-2
       p.mb-2 Elvina（エルビナ）は女性専用のパーソナルジムです。お客様も女性、トレーナーも女性。

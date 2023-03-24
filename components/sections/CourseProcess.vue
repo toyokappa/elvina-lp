@@ -7,7 +7,7 @@ section.section
       p
         strong 事前の準備は不要
         span です。初回トレーニングの日からダイエットもスタートします。理想の体型を思い浮かべながら当日まで楽しみにしてお待ち下さい。
-    PartsStep.mb-2(:step="2" title="初回トレーニング")
+    PartsStep.mb-2(:step="2" title="初回トレーニング" :image="image02")
       p.mb-1
         strong 食事改善のガイダンス
         span から行います。いきなり全てを詰め込むと大変ですので、まずは痩せるための基礎的な改善方法をトレーナーからご案内してさせていただきます。次回のトレーニングまでに実際に食事改善を試せるよう、丁寧にご案内いたします。
@@ -20,7 +20,7 @@ section.section
         span 程度。トレーナーが見本をお見せしながらペースに合わせてトレーニングを行います。トレーナーも適宜お声がけしながら、楽しく、モチベーション高くトレーニングを実施いただきます。
       p
         span 初めてのことばかりで右も左もわからない、なんてこともあるかもしれませんが、トレーナーが寄り添って対応しますので安心してお過ごしください。
-    PartsStep.mb-2(:step="3" title="コース期間中")
+    PartsStep.mb-2(:step="3" title="コース期間中" :image="image03")
       p.mb-1
         span コース期間中は
         strong 週2回を目処にトレーニング
@@ -32,7 +32,7 @@ section.section
       p
         strong 定期的な身体測定
         span を行い、数字で見える身体の変化を確認いただきます。お身体の変化をみることでモチベーションが上がるだけでなく、より重点的にシェイプアップしたい部位などが見えてきますので、トレーニングのご要望があればお気軽にトレーナーにお知らせください。
-    PartsStep.mb-2(:step="4" title="コース終了日")
+    PartsStep.mb-2(:step="4" title="コース終了日" :image="image04")
       p.mb-1
         span コース最終日は測定とトレーニングを行います。初日に撮影した写真と見比べて変化を一緒に見ながらフィードバックをさせていただきます。体重や体脂肪などの数字での変化はもちろんですが、
         strong 見た目の変化を何よりも感じていただける瞬間
@@ -41,7 +41,7 @@ section.section
         span 週2回のトレーニングと毎日の食事管理の成果が現れます。女性らしい美しい体づくりを専門で行うエルビナだからこそのサポートも相まって、
         strong より理想に近い体づくりを実感
         span いただけたらと思います。
-    PartsStep.mb-2(:step="5" title="継続利用プラン" noLine)
+    PartsStep.mb-2(:step="5" title="継続利用プラン" :image="image05" noLine)
       p.mb-1
         span ここで一度コースは終了となりますが、その後も新たな目標を定めて通い続けていただけるよう、
         strong コース修了者限定のプラン
@@ -61,6 +61,10 @@ section.section
 
 <script setup>
 import image01 from "@/assets/images/course-process01.jpg";
+import image02 from "@/assets/images/course-process02.jpg";
+import image03 from "@/assets/images/course-process03.jpg";
+import image04 from "@/assets/images/course-process04.jpg";
+import image05 from "@/assets/images/course-process05.jpg";
 </script>
 
 <style lang="sass" scoped></style>

@@ -13,12 +13,15 @@ section.section.bg-base
 </template>
 
 <script setup>
+import image01 from "@/assets/images/service01.jpg";
 import image02 from "@/assets/images/service02.png";
+import image03 from "@/assets/images/service03.jpg";
 import image04 from "@/assets/images/service04.jpg";
 
 const serviceList = [
   {
     name: "パーソナルトレーニング",
+    image: image01,
   },
   {
     name: "完全個室の提供",
@@ -26,6 +29,7 @@ const serviceList = [
   },
   {
     name: "高精度体組成計での測定",
+    image: image03,
   },
   {
     name: "食事改善カウンセリング",

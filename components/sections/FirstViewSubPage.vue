@@ -10,7 +10,7 @@
     PartsElvinaFont.underbar.f-64.mb-1 {{ pageTitleSub }}
     .f-24 {{ pageTitle }}
   PartsCampaign.mb-3
-.eyecatch.top
+//- .eyecatch.top
 </template>
 
 <script setup>

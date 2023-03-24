@@ -1,6 +1,7 @@
 <template lang="pug">
 section
-  .hero
+  video.hero(playsinline muted autoplay loop)
+    source(src="@/assets/videos/hero.mp4" type="video/mp4")
   .content
     h1.logo
       img(src="@/assets/images/logo.png" alt="Elvina" width="157" height="48")
@@ -16,8 +17,11 @@ section
 <style lang="sass" scoped>
 .hero
   width: 100%
-  height: 340px
+  height: auto
+  aspect-ratio: 1
   background-color: $grey
+  object-fit: cover
+  object-position: center center
   @include pc
     aspect-ratio: 16/9
     height: auto
