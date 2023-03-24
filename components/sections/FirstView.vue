@@ -18,7 +18,7 @@ section
 .hero
   width: 100%
   height: auto
-  aspect-ratio: 1
+  aspect-ratio: 4/3
   background-color: $grey
   object-fit: cover
   object-position: center center
