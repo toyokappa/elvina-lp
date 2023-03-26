@@ -6,17 +6,25 @@
     li
       img(src="@/assets/images/vector-right.svg" alt=">" width="16" height="17")
     li {{ pageTitle }}
-  h1.mb-3
+  h1.mb-3(v-if="mainHeader")
+    PartsElvinaFont.underbar.f-64.mb-1 {{ pageTitleSub }}
+    .f-24 {{ pageTitle }}
+  .mb-3(v-else)
     PartsElvinaFont.underbar.f-64.mb-1 {{ pageTitleSub }}
     .f-24 {{ pageTitle }}
   PartsCampaign.mb-3
 //- .eyecatch.top
 </template>
 
-<script setup>
-const props = defineProps({
-  pageTitle: String,
-  pageTitleSub: String,
+<script setup lang="ts">
+interface Props {
+  mainHeader?: boolean;
+  pageTitle: string;
+  pageTitleSub: string;
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  mainHeader: true,
 });
 </script>
 

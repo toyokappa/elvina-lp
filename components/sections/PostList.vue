@@ -27,7 +27,7 @@ const formatDate = (datetime) => {
 };
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 .post-list
   .post
     color: inherit
