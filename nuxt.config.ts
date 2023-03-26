@@ -51,7 +51,7 @@ export default defineNuxtConfig({
       ],
     }
   },
-  modules: ['~/modules/sitemap'],
+  modules: ['nuxt-simple-sitemap'],
   runtimeConfig: {
     public: {
       host,
@@ -61,6 +61,9 @@ export default defineNuxtConfig({
         accessToken: process.env.CTF_ACCESS_TOKEN,
       }
     },
+  },
+  sitemap: {
+    siteUrl: host,
   },
   router: {
     options: {
