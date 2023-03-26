@@ -5,5 +5,15 @@ SectionsFeature
 SectionsRecommend
 SectionsBeforeAfter
 SectionsCourse
-SectionsGymInfo
+SectionsColumnList(:postList="postList")
+SectionsGymInfo(bgBase)
 </template>
+
+<script setup>
+const res = await useNuxtApp().$contentful.getEntries({
+  content_type: "blogPost",
+  order: "-sys.createdAt",
+  limit: 3,
+});
+const postList = res.items;
+</script>

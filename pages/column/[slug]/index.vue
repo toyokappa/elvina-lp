@@ -5,7 +5,7 @@ SectionsFirstViewSubPage(
   :mainHeader="false"
   :breadcrumb="breadcrumb"
 )
-SectionsPost(
+SectionsColumn(
   :eyecatch="post.fields.eyecatch.fields.file.url"
   :title="post.fields.title"
   :createdAt="post.sys.createdAt"

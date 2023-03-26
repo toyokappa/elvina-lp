@@ -4,8 +4,9 @@ SectionsFirstViewSubPage(
   pageTitleSub="Column"
   :breadcrumb="breadcrumb"
 )
-SectionsPostList(
+SectionsColumnList(
   :postList="postList"
+  :columnPage="true"
 )
 </template>
 
