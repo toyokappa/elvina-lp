@@ -1,5 +1,5 @@
 <template lang="pug">
-.post-list
+.container
   nuxt-link.post.mb-10(
     v-for="post in postList"
     :key="post.sys.id"
@@ -28,21 +28,20 @@ const formatDate = (datetime) => {
 </script>
 
 <style lang="sass" scoped>
-.post-list
-  .post
-    color: inherit
-    text-decoration: none
-    display: flex
-    padding: 10px
-    .post-left
-      width: 100%
-      margin-right: 10px
-    .post-right
-      width: 100%
-      .title
-        font-weight: bold
-      .created-at
-        margin-top: 5px
-        color: $hint
-        text-align: right
+.post
+  color: inherit
+  text-decoration: none
+  display: flex
+  padding: 10px 0
+  .post-left
+    width: 100%
+    margin-right: 10px
+  .post-right
+    width: 100%
+    .title
+      font-weight: bold
+    .created-at
+      margin-top: 5px
+      color: $hint
+      text-align: right
 </style>

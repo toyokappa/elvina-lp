@@ -1,7 +1,8 @@
 <template lang="pug">
 SectionsFirstViewSubPage(
-  pageTitle="美ボディコラム"
+  :pageTitle="title"
   pageTitleSub="Column"
+  :breadcrumb="breadcrumb"
 )
 SectionsPostList(
   :postList="postList"
@@ -9,6 +10,16 @@ SectionsPostList(
 </template>
 
 <script setup>
+const { host, serviceName } = useRuntimeConfig().public;
+const { path } = useRoute();
+const title = "美ボディコラム";
+useHead({
+  title: title + " | " + serviceName,
+  link: [{ rel: "canonical", href: `${host}${path}` }],
+});
+
+const breadcrumb = [{ title }];
+
 const res = await useNuxtApp().$contentful.getEntries({
   content_type: "blogPost",
   order: "-sys.createdAt",

@@ -3,9 +3,14 @@
   ul.breadcrumb
     li
       nuxt-link(to="/") エルビナ
-    li
-      img(src="@/assets/images/vector-right.svg" alt=">" width="16" height="17")
-    li {{ pageTitle }}
+    template(v-for="item in breadcrumb" :key="item.title")
+      li
+        img(src="@/assets/images/vector-right.svg" alt=">" width="16" height="17")
+      li
+        template(v-if="item.path")
+          nuxt-link(:to="item.path") {{ item.title }}
+        template(v-else)
+          | {{ item.title }}
   h1.mb-3(v-if="mainHeader")
     PartsElvinaFont.underbar.f-64.mb-1 {{ pageTitleSub }}
     .f-24 {{ pageTitle }}
@@ -21,6 +26,7 @@ interface Props {
   mainHeader?: boolean;
   pageTitle: string;
   pageTitleSub: string;
+  breadcrumb: object[];
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -33,10 +39,13 @@ const props = withDefaults(defineProps<Props>(), {
   font-size: 12px
   list-style: none
   display: flex
+  flex-wrap: nowrap
   align-items: center
   margin: 10px 0
+  overflow: hidden
   li
-    margin-right: 10px
+    margin-right: 5px
+    flex-shrink: 0
     a
       color: inherit
       text-decoration: none

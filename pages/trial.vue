@@ -1,7 +1,8 @@
 <template lang="pug">
 SectionsFirstViewSubPage(
-  pageTitle="無料体験トレーニング"
+  :pageTitle="title"
   pageTitleSub="FreeTrial"
+  :breadcrumb="breadcrumb"
 )
 SectionsTrialProcess
 SectionsGymInfo(bgBase)
@@ -10,8 +11,11 @@ SectionsGymInfo(bgBase)
 <script setup>
 const { host, serviceName } = useRuntimeConfig().public;
 const { path } = useRoute();
+const title = "無料体験トレーニング";
 useHead({
-  title: "無料体験トレーニング | " + serviceName,
+  title: title + " | " + serviceName,
   link: [{ rel: "canonical", href: `${host}${path}` }],
 });
+
+const breadcrumb = [{ title }];
 </script>

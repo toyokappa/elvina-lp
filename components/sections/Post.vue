@@ -1,6 +1,6 @@
 <template lang="pug">
 .post
-  img.eyecatch.mb-1(:src="eyecatch")
+  img.eyecatch.mb-2(:src="eyecatch")
   .container
     h1.title.f-20 {{ title }}
     .created-at.mb-1 {{ formatDate(createdAt) }}

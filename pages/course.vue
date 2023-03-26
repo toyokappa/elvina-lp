@@ -1,7 +1,8 @@
 <template lang="pug">
 SectionsFirstViewSubPage(
-  pageTitle="コースと料金"
+  :pageTitle="title"
   pageTitleSub="Course"
+  :breadcrumb="breadcrumb"
 )
 SectionsCourseDetail
 SectionsService
@@ -14,8 +15,11 @@ SectionsGymInfo(bgBase)
 <script setup>
 const { host, serviceName } = useRuntimeConfig().public;
 const { path } = useRoute();
+const title = "コースと料金";
 useHead({
-  title: "コースと料金 | " + serviceName,
+  title: title + " | " + serviceName,
   link: [{ rel: "canonical", href: `${host}${path}` }],
 });
+
+const breadcrumb = [{ title }];
 </script>
