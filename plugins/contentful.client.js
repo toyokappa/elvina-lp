@@ -2,8 +2,8 @@ import * as contentful from 'contentful'
 export default defineNuxtPlugin(() => {
   const config = useRuntimeConfig()
   const ctfConfig = {
-    space: config.ctf.spaceId,
-    accessToken: config.ctf.accessToken,
+    space: config.public.ctf.spaceId,
+    accessToken: config.public.ctf.accessToken,
   }
 
   return {
