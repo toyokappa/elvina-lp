@@ -10,6 +10,8 @@ SectionsColumn(
   :title="post.fields.title"
   :createdAt="post.sys.createdAt"
   :content="post.fields.content"
+  :prevPost="prevPost"
+  :nextPost="nextPost"
 )
 </template>
 
@@ -18,11 +20,29 @@ const { host, serviceName } = useRuntimeConfig().public;
 const { path, params } = useRoute();
 const { slug } = params;
 
-const res = await useNuxtApp().$contentful.getEntries({
+const { $contentful } = useNuxtApp();
+
+const res = await $contentful.getEntries({
   content_type: "blogPost",
   "fields.slug": slug,
 });
 const post = res.items[0];
+
+const prevRes = await $contentful.getEntries({
+  content_type: "blogPost",
+  "sys.createdAt[lt]": post.sys.createdAt,
+  order: "-sys.createdAt",
+  limit: 1,
+});
+const prevPost = prevRes.items[0];
+
+const nextRes = await $contentful.getEntries({
+  content_type: "blogPost",
+  "sys.createdAt[gt]": post.sys.createdAt,
+  order: "sys.createdAt",
+  limit: 1,
+});
+const nextPost = nextRes.items[0];
 
 useHead({
   title: post.fields.title + " | " + serviceName,
