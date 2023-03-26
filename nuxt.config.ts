@@ -56,7 +56,11 @@ export default defineNuxtConfig({
     public: {
       host,
       serviceName,
-    }
+      ctf: {
+        spaceId: process.env.CTF_SPACE_ID,
+        accessToken: process.env.CTF_ACCESS_TOKEN,
+      }
+    },
   },
   router: {
     options: {
