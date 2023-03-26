@@ -34,10 +34,6 @@ const { data } = await useFetch(
     },
   }
 );
-// const res = await useNuxtApp().$contentful.getEntries({
-//   content_type: "blogPost",
-//   order: "-sys.createdAt",
-// });
 const postList = data.value.items.map((item) => {
   const eyecatch = data.value.includes.Asset.find(
     (asset) => asset.sys.id === item.fields.eyecatch.sys.id
