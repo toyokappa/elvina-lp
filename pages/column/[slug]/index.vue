@@ -22,27 +22,54 @@ const { slug } = params;
 
 const { $contentful } = useNuxtApp();
 
-const res = await $contentful.getEntries({
-  content_type: "blogPost",
-  "fields.slug": slug,
+const { ctf } = useRuntimeConfig().public;
+const ctfUrl = `https://cdn.contentful.com/spaces/${ctf.spaceId}/environments/master/entries`;
+const authorization = "Bearer " + ctf.accessToken;
+const { data } = await useFetch(ctfUrl, {
+  params: {
+    content_type: "blogPost",
+    "fields.slug": slug,
+  },
+  headers: {
+    authorization,
+  },
 });
-const post = res.items[0];
+const post = data.value.items[0];
+post.fields.eyecatch = data.value.includes.Asset[0];
 
-const prevRes = await $contentful.getEntries({
-  content_type: "blogPost",
-  "sys.createdAt[lt]": post.sys.createdAt,
-  order: "-sys.createdAt",
-  limit: 1,
+const { data: prevRes } = await useFetch(ctfUrl, {
+  params: {
+    content_type: "blogPost",
+    "sys.createdAt[lt]": post.sys.createdAt,
+    order: "-sys.createdAt",
+    limit: 1,
+  },
+  headers: {
+    authorization,
+  },
 });
-const prevPost = prevRes.items[0];
+let prevPost;
+if (prevRes.value.items.length > 0) {
+  prevPost = prevRes.value.items[0];
+  prevPost.fields.eyecatch = prevRes.value.includes.Asset[0];
+}
 
-const nextRes = await $contentful.getEntries({
-  content_type: "blogPost",
-  "sys.createdAt[gt]": post.sys.createdAt,
-  order: "sys.createdAt",
-  limit: 1,
+const { data: nextRes } = await useFetch(ctfUrl, {
+  params: {
+    content_type: "blogPost",
+    "sys.createdAt[gt]": post.sys.createdAt,
+    order: "sys.createdAt",
+    limit: 1,
+  },
+  headers: {
+    authorization,
+  },
 });
-const nextPost = nextRes.items[0];
+let nextPost;
+if (nextRes.value.items.length > 0) {
+  nextPost = nextRes.value.items[0];
+  nextPost.fields.eyecatch = nextRes.value.includes.Asset[0];
+}
 
 useHead({
   title: post.fields.title + " | " + serviceName,

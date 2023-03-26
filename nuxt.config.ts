@@ -5,6 +5,19 @@ const serviceName = "女性専用パーソナルジムElvina(エルビナ)"
 const pageTitle = `${serviceName} | 前橋初！女性が安心して通えるパーソナルジム`
 const description = "前橋初！トレーナーは全員女性。安心してトレーニングがしたい。そんな夢を叶えるパーソナルジムです。"
 
+const fetchCtf = async (type: string) => {
+  const contentful = require('contentful')
+  const client = contentful.createClient({
+    space: process.env.CTF_SPACE_ID,
+    accessToken: process.env.CTF_ACCESS_TOKEN
+  })
+  const res = await client.getEntries({
+    content_type: type,
+    order: '-sys.createdAt'
+  })
+  return res
+}
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
@@ -61,6 +74,18 @@ export default defineNuxtConfig({
         accessToken: process.env.CTF_ACCESS_TOKEN,
       }
     },
+  },
+  hooks: {
+    async "nitro:config"(nitroConfig) {
+      if (nitroConfig.dev) return
+
+      const res = await fetchCtf('blogPost')
+      if (nitroConfig.prerender?.routes === undefined) return
+
+      nitroConfig.prerender.routes = res.items.map((item: any) => {
+        return `/column/${item.fields.slug}`
+      })
+    }
   },
   sitemap: {
     siteUrl: host,
