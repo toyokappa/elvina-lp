@@ -13,6 +13,8 @@ SectionsColumn(
   :prevPost="prevPost"
   :nextPost="nextPost"
 )
+SectionsColumnCta
+SectionsGymInfo
 </template>
 
 <script setup>

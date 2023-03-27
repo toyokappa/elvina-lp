@@ -8,6 +8,8 @@ SectionsColumnList(
   :postList="postList"
   :columnPage="true"
 )
+SectionsColumnCta
+SectionsGymInfo
 </template>
 
 <script setup>
